@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable resume</title>
+    <link rel="stylesheet" href="dynamiccv.css">
+</head>
+<body>
+    <form id="resumeform">
+        <div class="form">
+       <b> <h1>EDITABLE RESUME FORMAT</h1></b><br>
+       <div class="form-main">
+        <!--Pesonal details-->
+        <h2>PERSONAL DEATILS</h2>
+       <strong><label for="firstname">First Name</label></strong>
+        <input id="firstname" name="firstname" placeholder="firstname">
+        <strong><label for="lastname">Last Name</label></strong>
+        <input id="lastname" name="lastname" placeholder="lastname">
+        <strong><label for="email">Email Address</label></strong>
+        <input id="email" name="email" placeholder="email">
+        <strong><label for="address">Address</label></strong>
+        <input id="address" name="address" placeholder="address">
+        <strong><label for="number">Phone NO</label></strong>
+        <input id="number" type="number" placeholder="number">
+        <!--Education details-->
+        <h2>QUALIFICATION</h2>
+        <strong><label for="education">Education</label></strong>
+        <textarea name="education" id="education" rows="4"
+        cols="50" placeholder="Enter your qualification"></textarea>
+        <!--skills details-->
+        <h2>SKILLS</h2>
+        <strong><label for="skills">Skills</label></strong>
+            <textarea name="skills" id="skills" rows="4"
+        cols="50" placeholder="Enter your skills"></textarea>
+        <!--Experience details-->
+        <h2>EXPERIENCE</h2>
+        <strong><label for="experience">Experience</label></strong>
+        <textarea name="experience" id="experience" rows="4"
+        cols="50" placeholder="Enter your experience"></textarea>
+       </div>
+       <!--button added-->
+        <button>
+            <h2>SUBMIT</h2>
+        </button>
+    </form>  
+</div>
+    <!--resume display code-->
+    <div id="resume-display" contenteditable="true">
+        <!--reume output-->
+    </div>
+    <!--Javascript file src-->
+    <script src="dynamiccv.js"></script>
+</body>
+</html>
